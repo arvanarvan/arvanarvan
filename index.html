@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arvanarvan — modern fashion, elevated essentials, and contemporary clothing." />
+  <title>Arvanarvan | Modern Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">FREE U.S. SHIPPING ON ORDERS OVER $75</div>
+
+  <header class="header">
+    <a href="#" class="logo" aria-label="Arvanarvan home">ARVANARVAN</a>
+    <nav class="nav" id="nav">
+      <a href="#new">New In</a>
+      <a href="#shop">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Search" id="searchBtn">⌕</button>
+      <button class="bag-btn" aria-label="Shopping bag">Bag <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">THE NEW COLLECTION</p>
+        <h1>Style that feels<br>like you.</h1>
+        <p class="hero-copy">Modern silhouettes, refined essentials, and effortless pieces made for every day.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-light" href="#shop">Shop Collection</a>
+          <a class="btn btn-outline" href="#story">Discover Arvanarvan</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="new">
+      <p class="eyebrow dark">NEW SEASON</p>
+      <h2>Designed for now.<br>Made to last.</h2>
+      <p>Discover elevated everyday pieces with clean lines, versatile colors, and comfortable fabrics.</p>
+    </section>
+
+    <section class="categories">
+      <article class="category-card cat-men">
+        <div class="category-content">
+          <span>01</span>
+          <h3>Men</h3>
+          <a href="#shop">Shop Men →</a>
+        </div>
+      </article>
+      <article class="category-card cat-women">
+        <div class="category-content">
+          <span>02</span>
+          <h3>Women</h3>
+          <a href="#shop">Shop Women →</a>
+        </div>
+      </article>
+      <article class="category-card cat-accessories">
+        <div class="category-content">
+          <span>03</span>
+          <h3>Accessories</h3>
+          <a href="#shop">Shop Accessories →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section shop" id="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark">CURATED FOR YOU</p>
+          <h2>Featured pieces</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="men">Men</button>
+          <button class="filter" data-filter="women">Women</button>
+          <button class="filter" data-filter="accessories">Accessories</button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="women">
+          <div class="product-image p1"><span class="tag">NEW</span></div>
+          <div class="product-info">
+            <div><h3>Essential Rib Top</h3><p>Ivory</p></div><strong>$42</strong>
+          </div>
+          <button class="add-btn" data-name="Essential Rib Top">Add to bag</button>
+        </article>
+
+        <article class="product-card" data-category="men">
+          <div class="product-image p2"></div>
+          <div class="product-info">
+            <div><h3>Relaxed Overshirt</h3><p>Stone</p></div><strong>$89</strong>
+          </div>
+          <button class="add-btn" data-name="Relaxed Overshirt">Add to bag</button>
+        </article>
+
+        <article class="product-card" data-category="women">
+          <div class="product-image p3"><span class="tag">BESTSELLER</span></div>
+          <div class="product-info">
+            <div><h3>Tailored Wide-Leg Pant</h3><p>Black</p></div><strong>$76</strong>
+          </div>
+          <button class="add-btn" data-name="Tailored Wide-Leg Pant">Add to bag</button>
+        </article>
+
+        <article class="product-card" data-category="accessories">
+          <div class="product-image p4"></div>
+          <div class="product-info">
+            <div><h3>Minimal Carry Tote</h3><p>Natural</p></div><strong>$55</strong>
+          </div>
+          <button class="add-btn" data-name="Minimal Carry Tote">Add to bag</button>
+        </article>
+
+        <article class="product-card" data-category="men">
+          <div class="product-image p5"></div>
+          <div class="product-info">
+            <div><h3>Heavyweight Tee</h3><p>Charcoal</p></div><strong>$48</strong>
+          </div>
+          <button class="add-btn" data-name="Heavyweight Tee">Add to bag</button>
+        </article>
+
+        <article class="product-card" data-category="women">
+          <div class="product-image p6"></div>
+          <div class="product-info">
+            <div><h3>Soft Knit Cardigan</h3><p>Oatmeal</p></div><strong>$94</strong>
+          </div>
+          <button class="add-btn" data-name="Soft Knit Cardigan">Add to bag</button>
+        </article>
+
+        <article class="product-card" data-category="men">
+          <div class="product-image p7"><span class="tag">LIMITED</span></div>
+          <div class="product-info">
+            <div><h3>Utility Jacket</h3><p>Olive</p></div><strong>$128</strong>
+          </div>
+          <button class="add-btn" data-name="Utility Jacket">Add to bag</button>
+        </article>
+
+        <article class="product-card" data-category="accessories">
+          <div class="product-image p8"></div>
+          <div class="product-info">
+            <div><h3>Classic Cap</h3><p>Black</p></div><strong>$32</strong>
+          </div>
+          <button class="add-btn" data-name="Classic Cap">Add to bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-image"></div>
+      <div class="story-copy">
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+        <h2>Less noise.<br>More style.</h2>
+        <p>Arvanarvan creates modern clothing for real life. We focus on thoughtful details, comfortable fits, and pieces that work season after season.</p>
+        <p>Our collections balance contemporary trends with timeless design, giving you more ways to wear what you already love.</p>
+        <a href="#contact" class="text-link">Learn more about us →</a>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✦</span><h3>Quality Materials</h3><p>Selected for comfort, feel, and everyday wear.</p></div>
+      <div><span>↺</span><h3>Easy Returns</h3><p>Simple 30-day returns on eligible items.</p></div>
+      <div><span>□</span><h3>Secure Checkout</h3><p>Your shopping experience comes first.</p></div>
+      <div><span>◇</span><h3>Customer Care</h3><p>Friendly support when you need it.</p></div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div>
+        <p class="eyebrow">STAY IN THE LOOP</p>
+        <h2>Join the Arvanarvan list.</h2>
+        <p>New drops, limited releases, styling inspiration, and special offers — delivered occasionally.</p>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" id="email" placeholder="Enter your email address" required />
+        <button type="submit">Join Us</button>
+      </form>
+      <p class="form-message" id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="#">ARVANARVAN</a>
+        <p>Modern fashion for everyday life.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#new">New Arrivals</a>
+        <a href="#shop">Men</a>
+        <a href="#shop">Women</a>
+        <a href="#shop">Accessories</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#contact">Contact</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Size Guide</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Arvanarvan. All rights reserved.</span>
+      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Added to bag</div>
+  <script src="script.js"></script>
+</body>
+</html>
